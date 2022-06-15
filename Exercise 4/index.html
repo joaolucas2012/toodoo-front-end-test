@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="o-header white">
+        <h1>Resolução do Exercício 4</h1>
+    </header>
+    <aside class="o-aside">
+        <p id="paragraph">QUESTÃO 4) Descreva em CSS a seguinte regra: todos os itens de <br/>
+            uma lista devem estar orientados na vertical
+        </p>
+        <img src="./images/list.PNG" alt="list image"><br/>
+        <img src="./images/css-list-style.PNG" alt="css list image">
+    </aside>
+    <main class="o-main white">
+        <div class="container">
+            <h3>Resposta:</h3>
+            <p>
+                Esse é o passo a passo para orientar verticalmente os itens 
+                da lista no CSS:
+            </p>
+            <nav>
+                <ul class="dark-background">
+                    <li><b>display:</b> flex;</li>
+                    <li><b>flex-direction:</b> column;</li>
+                    <li><b>justify-content:</b> center;</li>
+                    <li><b>align-items:</b> left;</li>
+                    <li><b>list-style-type:</b>  none;</li>
+                </ul>
+            </nav>
+            <p>
+                O <b>list-style-type: none;</b> serve para retirar os pontos da lista:
+            </p>
+            <nav>
+                <ul  class="ul-none-style dark-background">
+                    <li><b>display:</b> flex;</li>
+                    <li><b>flex-direction:</b> column;</li>
+                    <li><b>justify-content:</b> center;</li>
+                    <li><b>align-items:</b> left;</li>
+                </ul>
+            </nav>
+            <p>
+                Os estilos foram aplicados na tag "ul", a responsável por<br/>
+                "empacotar" todos as tags "li" com os elementos da lista. 
+            </p>
+        </div>
+    </main>
+    <footer class="o-footer white">
+        <p>Espero que seja a resposta que você queria 😄</p>
+        <p>Resolvido com 💜 por João Lucas</p>
+    </footer>
+</body>
+</html>
