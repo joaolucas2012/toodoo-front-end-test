@@ -8,7 +8,7 @@
 }
 
 .A__div{
-    width: 97vw;
+    width: 98vw;
     height: 30vh;
     font-size: 70px;
     display: flex;
@@ -38,7 +38,13 @@
     padding: 3px;
 }
 
-.CDE__div{
+.BCD__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.BCDE__div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,12 +73,53 @@
 }
 
 .E__div{
-    width: 30vw;
+    width: 40vw;
+    height: 63vh;
     border: 3px solid black;
     font-size: 70px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
+    margin: 1% 1% 0 1%;
 } 
+
+@media (min-width: 320px) and (max-width: 425px){
+    .A__div{
+        height: 20vh;
+    }
+
+    .B__div{
+        width: 98vw;
+        padding: 0;
+    }
+
+    .C__div{
+        width: 46%;
+        height: 20vh;
+    }
+
+    .D__div{
+        width: 46%;
+        height: 20vh;
+    }
+
+    .CD__div{
+        width: 98vw;
+        padding: 1%;
+        justify-content:space-between;
+    }
+
+    .BCDE__div{
+        width: 98vw;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .E__div{
+        height: 20vh;
+        width: 97vw;
+        padding: 0;
+    }
+}
