@@ -1,0 +1,78 @@
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+    background-color: rgb(219, 210, 210);
+}
+
+header {
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.o-header {
+    grid-area: header;
+    padding: 1.5rem;
+}
+
+.o-aside {
+    grid-area: aside;
+    background-color: rgb(53, 53, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-footer {
+    grid-area: footer;
+    padding: 1.5rem;
+}
+
+.white{
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#paragraph{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
