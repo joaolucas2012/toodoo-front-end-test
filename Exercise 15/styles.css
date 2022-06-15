@@ -1,27 +1,32 @@
 body {
     display: grid;
-    font-family: Arial, sans-serif;
-    grid-template-areas:
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr minmax(300px, 60vh) 1.5fr;
+    grid-template-areas: 
         "header header header"
-        "menu main right"
+        "menu   main   right"
         "menu footer footer";
-    grid-gap: 1rem;
-    grid-template-columns: 33vh 33vh 33vh;
-    grid-template-rows: 33vh 33vh 33vh;
-    background-color: red;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .o-header {
     grid-area: header;
     padding: 1.5rem;
+    margin: 1% 0.3%;
 }
 
 .o-menu {
-    grid-area: aside;
+    grid-area: menu;
 }
 
 .o-main {
     grid-area: main;
+}
+
+.o-right{
+    grid-area: right;
 }
 
 .o-footer {
@@ -29,6 +34,20 @@ body {
     padding: 1.5rem;
 }
 
-.gray{
-    background-color: gray;
+.light-blue{
+    background-color: rgb(175, 220, 248);
+}
+
+.centralized{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue{
+    background-color: rgb(4, 156, 250);
+}
+
+.margin__one{
+    margin: 1%;
 }
