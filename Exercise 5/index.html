@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="o-header white">
+        <h1>Resolução do Exercício 5</h1>
+    </header>
+    <aside class="o-aside">
+        <p id="paragraph">
+            QUESTÃO 5) Descreva em CSS a seguinte regra: somente o último item de <br/>
+            uma lista não deve ter uma linha na sua base.
+        </p>
+        <img src="./images/list.PNG" alt="list image">
+        <img src="./images/list-style.PNG" alt="list style image">
+    </aside>
+    <main class="o-main white">
+        <div class="container">
+            <h3>Resposta:</h3>
+            <p id="text">
+                Para cumprir com essa exigência, deve-se aplicar uma borda inferior<br/>
+                a cada um dos elementos "li". Após isso, deve-se usar a <br/>
+                propriedade <b>nth-last-child(-n+1)</b>, que seleciona o último <br/>
+                item da lista, e aplicar um <b>border: none;</b> a ele.
+            </p>
+            <br/> 
+            <nav>
+                <ul  class="last-item-without-line">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <footer class="o-footer white">
+        <p>Espero que seja a resposta que você queria 😄</p>
+        <p>Resolvido com 💜 por João Lucas</p>
+    </footer>
+</body>
+</html>
